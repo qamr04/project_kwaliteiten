@@ -17,10 +17,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 40px 20px;
             background: #8b0000;
             position: relative;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         /* Floating hearts background - visible on both pages */
@@ -152,6 +152,26 @@
             position: relative;
             backdrop-filter: blur(10px);
             border: 2px solid rgba(225, 204, 174, 0.5);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .card-container::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .card-container::-webkit-scrollbar-track {
+            background: rgba(225, 204, 174, 0.3);
+            border-radius: 10px;
+        }
+
+        .card-container::-webkit-scrollbar-thumb {
+            background: #8b0000;
+            border-radius: 10px;
+        }
+
+        .card-container::-webkit-scrollbar-thumb:hover {
+            background: #a52a2a;
         }
 
         /* Decorative corners - more elegant */
